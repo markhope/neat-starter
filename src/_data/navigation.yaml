@@ -6,5 +6,7 @@ items:
     url: "#"
   - text: Menu Three
     url: "#"
+  - text: Edited
+    url: "https://example.com"
   - text: Blog
     url: "/blog"
