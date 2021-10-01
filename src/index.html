@@ -6,12 +6,26 @@ path: home
 
 <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
   <h1>
+    <div id="search">
+  <div id="searchBig"></div>
+  <div id="searchSmall"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: 'XHC1TTT7YC',
+      apiKey: '19ea0db7754913361d0296867108d498',
+      siteId: '5a255018-e5e0-4d7d-91b3-42f80d501695',
+      branch: 'main',
+      selector: 'div#search',
+    });
+  </script>
+</div>
     Welcome to
     <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
       {{title}}
     </strong>
   </h1>
-
   <p>
     <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
     Starter Template. Get Started by editing.
